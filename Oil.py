@@ -3,7 +3,7 @@ import subprocess
 import sublime
 import sublime_plugin
 
-class OilServerCommand(sublime_plugin.TextCommand):
+class OilCommand(sublime_plugin.TextCommand):
 
     def get_oil_path(self):
         return os.path.join(self.view.window().folders()[0], "oil")

@@ -1,6 +1,6 @@
 [
     {
-        "caption": "oil server: FuelPHP run server",
-        "command": "oil_server"
+        "caption": "FuelOil: oil commands runner",
+        "command": "oil"
     }
 ]
