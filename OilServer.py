@@ -1,13 +1,12 @@
+import os
 import sublime
 import sublime_plugin
 
 class OilServerCommand(sublime_plugin.TextCommand):
 
     def run(self, edit):
-        project_data = self.view.window().project_data()
-        if project_data:
-            project_root = project_data["folders"][0]["path"]
-            oil_cmd = "php " + project_root + "/oil server"
-            sublime.message_dialog(oil_cmd)
+        oil_path = self.view.window().folders()[0] + "/oil"
+        if os.path.isfile("%s" % oil_path):
+            sublime.message_dialog(oil_path)
         else:
-            sublime.message_dialog("Not set project")
+            sublime.message_dialog("Not found oil")
