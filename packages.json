@@ -1,0 +1,12 @@
+{
+    "schema_version": "2.0",
+    "packages": [{
+        "name": "FuelOil",
+        "details": "https://github.com/shuto-S/FuelOil",
+        "labels": ["auto-complete", "color scheme", "language syntax", "linting", "theme"],
+        "releases": [{
+            "sublime_text": "*",
+            "details": "https://github.com/shuto-S/FuelOil/releases"
+        }]
+    }]
+}
